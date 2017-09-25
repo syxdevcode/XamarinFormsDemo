@@ -13,7 +13,10 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new App1.MainPage();
+            //MainPage = new App1.MainPage();
+
+            //Navigation.PushAsync() 写法
+            MainPage = new Xamarin.Forms.NavigationPage(new App1.MainPage()) { BarBackgroundColor = Color.BlueViolet };
         }
 
         protected override void OnStart()
