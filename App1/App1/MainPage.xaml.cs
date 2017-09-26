@@ -42,7 +42,12 @@ namespace App1
         }
         private void Button_Clicked_6(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new GridTest1());
+            Navigation.PushAsync(new LayoutPage.GridPage());
+        }
+
+        private void Button_Clicked_7(object sender,EventArgs e)
+        {
+            Navigation.PushAsync(new ViewDemoPage());
         }
     }
 }

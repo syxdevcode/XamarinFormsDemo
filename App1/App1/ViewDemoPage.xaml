@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:loact="clr-namespace:App1.MyRenderer"
+             x:Class="App1.ViewDemoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ActivityIndicator Color="Red" IsRunning="True" x:Name="Loading"/>
+                <BoxView Color="Red" x:Name="Box" WidthRequest="20" HeightRequest="20"/>
+                <Button Text="测试按钮" TextColor="Red" BackgroundColor="Blue" BorderRadius="10" HeightRequest="80" Clicked="Button_Clicked"></Button>
+                <DatePicker Format="yyyy-MM-dd" TextColor="Blue" x:Name="TimePic" MinimumDate="2016-1-1"/>
+                <TimePicker TextColor="Blue"/>
+                <Editor WidthRequest="50" HeightRequest="200"/>
+                <Entry Text="内容"/>
+                <Image Source="icon.png"/>
+                <Label Text="LableText"/>
+                <Picker x:Name="Pickeritem" Title="PickeritemTest"/>
+                <loact:MyProgressBar Progress=".6" BackgroundColor="Red"  />
+                <ProgressBar Progress=".5" BackgroundColor="Blue" MinimumHeightRequest="-20" HeightRequest="-1"/>
+                <SearchBar Text="搜索" SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+                <Slider Maximum="50" Minimum="10" Value="10"/>
+                <Switch IsToggled="True" Toggled="Switch_Toggled"/>
+                <Stepper Increment="10" x:Name="SetpperTest" Maximum="100" Minimum="0" Value="20" ValueChanged="Stepper_ValueChanged"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
